@@ -1,0 +1,57 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
+}
+
+#game {
+  position: relative;
+  width: 800px;
+  height: 300px;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#bow, #right-photo, #target-photo {
+  width: 100px;
+  height: auto;
+}
+
+#arrow {
+  position: absolute;
+  left: 120px; /* Starting position */
+  width: 50px;
+  height: auto;
+  transition: left 1s linear;
+}
+
+.hidden {
+  display: none;
+}
+
+#shoot-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #ff4772;
+  border: none;
+  font-weight: bold;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+.message {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.heart {
+  width: 40px;
+}
