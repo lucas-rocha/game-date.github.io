@@ -80,6 +80,8 @@ document.addEventListener('DOMContentLoaded', () => {
       // Move to the next target image
       currentTargetIndex = (currentTargetIndex + 1) % targetImages.length;
 
+      for (let i = 0; i < 2; i++) {
+
       // Add heart photo inside the game div
       const heart = document.createElement('img');
       heart.src = 'heart1.png'; // Adjust this to the path of your heart image
@@ -93,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
       heart.style.top = `${randomY}px`; // Adjust this to position the heart correctly
 
       heartsContainer.appendChild(heart);
-    }, { once: true });
+    }}, { once: true });
   });
 
   function showMessage(message) {
